@@ -50,7 +50,19 @@ class Code {
                 onInstall();
             });
         }
+        this.menu_install = document.getElementsByClassName("liNav-install")[0].lastElementChild
+        this.menu_list = document.getElementsByClassName("liNav-list")[0].lastElementChild
+        console.log("menu")
+        console.log(this.menu_install)
+        console.log(this.menu_list)
 
+        this.menu_install.addEventListener('click', (event) => {
+            this.onHome()
+        })
+
+        this.menu_list.addEventListener('click', (event) => {
+            this.onContent()
+        })
     }
 
     onHome() {

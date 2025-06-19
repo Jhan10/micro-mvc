@@ -63,7 +63,7 @@ ul {
   padding: 0;
 }
 
-li {
+li:not(.liNav) {
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -72,7 +72,7 @@ li {
   border-radius: 4px;
 }
 
-li span {
+li:not(.liNav) span {
   display: inline-block;
   padding: .5rem;
   width: 250px;
@@ -98,4 +98,84 @@ li span:focus {
   background: #786f6f;
   color: rgb(0, 0, 0);
   border: 2px solid #ff0000;
+}
+ /* */
+ /* */
+ /* */
+ /* */
+
+body{
+    background: #75ccec;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+.epage{
+  padding-top: 5%;
+}
+#menu{
+  position: absolute;
+}
+
+#menu nav{
+  background: #da25e0;
+  border-radius: 20px;
+  width: 50px;
+  box-shadow: 2px 2px 5px #333;
+  transition: all 0.5s ease;
+}
+
+#menu li{
+  list-style: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#menu li > a{
+  color: #fff;text-decoration: none;
+}
+
+#menu a > span{
+  font-size: 0;
+  display: block;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+#menu label{
+  font-size: 28px;
+  padding-left: 15px;
+}
+#toogle{
+  display: none;
+}
+
+#toogle:checked + nav{
+  width:300px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+#toogle:checked + nav li{
+  border-bottom: dashed 1px #ddd;
+  text-align: left;
+}
+#toogle:checked + nav li:last-child{
+  border: none;
+
+}
+
+#toogle:checked + nav a > span{
+  font-size: 16px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.fa-bars:hover{
+  color: #fff;
+  text-shadow: 1px 1px 8px #2b343e;
+}
+
+#menu li > a:hover{
+  color: #2b343e;
+  text-shadow: 0 0 5px #fff;
 }
