@@ -110,7 +110,9 @@ body{
 }
 .epage{
   padding-top: 5%;
+  padding-left: 12%;
 }
+
 #menu{
   position: absolute;
 }
