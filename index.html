@@ -4,15 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title>Todo App</title>
+    <link rel="shortcut icon" href="_assets/mini-lista-ico.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <title>Mini Lista App</title>
 
     <link rel="stylesheet" href="style.css" />
+    
+    
   </head>
-
   <body>
-    <div id="root"></div>
+    
+    <div>
+      <div class="home">
+        <h1>Mini Lista</h1>
+        <h2>Installe o app, para ter uma melhor experiência...</h2>
+        <br /> <br />
+        <button disabled type="button" class="pr-install">Instalar</button>
+      </div>
+      <div class="content">
+        <div id="root">
 
+        </div>
+      </div>
+    </div>
+    <script src="helper.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>

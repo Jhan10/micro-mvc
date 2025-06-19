@@ -1,0 +1,80 @@
+{
+    "name": "Mini Lista App",
+    "short_name": "Mini Lista",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "_assets/icons/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "_assets/icons/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "_assets/icons/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "_assets/icons/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "theme_color": "#5607b0",
+    "background_color": "#1e9c08",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "screenshots": [
+        {
+            "src": "_assets/screenshots/mlp1.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Area Inicial"
+        },
+        {
+            "src": "_assets/screenshots/mlp2.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Lista Vazia"
+        },
+        {
+            "src": "_assets/screenshots/mlp3.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Lista de Tarefas"
+        },
+        {
+            "src": "_assets/screenshots/mlp1.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Area Inicial"
+        },
+        {
+            "src": "_assets/screenshots/mlp2.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Lista Vazia"
+        },
+        {
+            "src": "_assets/screenshots/mlp3.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Lista de Tarefas"
+        }
+    ],
+    "description": "Um mini organizador de tarefas na palma da sua mão"
+}

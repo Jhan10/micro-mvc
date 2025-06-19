@@ -1,3 +1,4 @@
+
 class Model {
   constructor() {
    
@@ -5,7 +6,6 @@ class Model {
     this.todos=[]
     this.loadDataByToggle(this.savetoggle)
 
-    
     // The state of the model, an array of todo objects, prepopulated with some data
 /*     this.todos = [
       {id: 1, text: 'Run a marathon', complete: false},
@@ -113,17 +113,16 @@ class View {
   constructor() {
     // The root element
     this.app = this.getElement('#root')
-
     // The title of the app
     this.title = this.createElement('h1')
-    this.title.textContent = 'Todos'
+    this.title.textContent = 'Mini Lista'
 
     // The form, with a [type="text"] input, and a submit button
     this.form = this.createElement('form')
 
     this.input = this.createElement('input')
     this.input.type = 'text'
-    this.input.placeholder = 'Add todo'
+    this.input.placeholder = 'Adicione tarefas aqui...'
     this.input.name = 'todo'
 
     this.submitButton = this.createElement('button')
@@ -181,7 +180,7 @@ class View {
     // Show default message
     if (todos.length === 0) {
       const p = this.createElement('p')
-      p.textContent = 'Nothing to do! Add a task?'
+      p.textContent = 'Nada para fazer? Adicione uma nova tarefa!'
       this.todoList.append(p)
     } else {
       // Create todo item nodes for each todo in state

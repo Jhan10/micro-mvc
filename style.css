@@ -31,6 +31,7 @@ button {
   border-radius: 4px;
 }
 
+/* :not(.pr-install) */
 button {
   cursor: pointer;
   background: #007bff;
@@ -91,4 +92,10 @@ li span:focus {
 
 .div-config{
   margin-bottom: 2rem;
+}
+
+.pr-install:disabled{
+  background: #786f6f;
+  color: rgb(0, 0, 0);
+  border: 2px solid #ff0000;
 }
