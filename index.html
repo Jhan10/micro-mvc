@@ -12,6 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <script src="https://kit.fontawesome.com/96184c1ff5.js" crossorigin="anonymous"></script>
+    <script>
+              if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+
+    </script>
+    <!-- #region OneSignal  -->
+     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+     <script>
+     window.OneSignalDeferred = window.OneSignalDeferred || [];
+     OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "48fc6a50-094e-4fcc-ae8a-7cc52470b309",
+      });
+      });
+      </script>
+    <!-- #endregion OneSignal  -->
 
     <title>Mini Lista App</title>
 
@@ -43,6 +60,8 @@
         <h2>Installe o app, para ter uma melhor experiência...</h2>
         <br /> <br />
         <button disabled type="button" class="pr-install">Instalar</button>
+        <br /> <br />
+        <div class='onesignal-customlink-container'></div>
       </div>
       <div class="content">
         <div id="root">

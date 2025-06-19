@@ -16,7 +16,7 @@ class Code {
         this.onContent()
 
         if ('BeforeInstallPromptEvent' in window) {
-            //this.onHome();
+            this.onHome();
             let installEvent = null;
 
             const onInstall = () => {
@@ -52,9 +52,6 @@ class Code {
         }
         this.menu_install = document.getElementsByClassName("liNav-install")[0].lastElementChild
         this.menu_list = document.getElementsByClassName("liNav-list")[0].lastElementChild
-        console.log("menu")
-        console.log(this.menu_install)
-        console.log(this.menu_list)
 
         this.menu_install.addEventListener('click', (event) => {
             this.onHome()
@@ -74,6 +71,14 @@ class Code {
         this.home.setAttribute("Style", "Display: none");
         this.content.setAttribute("Style", "Display: block");
     }
+
+/*     onNotification(){
+        Notification.requestPermission().then(function(permission){
+            if(permission === "granted"){
+                var notification = new Notification("Hi there!")
+            }
+        })
+    } */
    
 }
 const helper = new Code()
