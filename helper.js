@@ -16,7 +16,7 @@ class Code {
         this.onContent()
 
         if ('BeforeInstallPromptEvent' in window) {
-            this.onHome();
+            //this.onHome();
             let installEvent = null;
 
             const onInstall = () => {
